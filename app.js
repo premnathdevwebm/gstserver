@@ -5,7 +5,7 @@ const healthRotes = require("./routes/health")
 
 const port = process.env.PORT || 3001;
 
-app.get("/", healthRotes);
+app.use("/", healthRotes);
 
 app.use((req, res, next) => {
   const err = new Error("Not Found");
