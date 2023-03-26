@@ -3,6 +3,7 @@ const { expressjwt: jwt } = require("express-jwt");
 
 const ctrlProfile = require('../controllers/user/profile');
 const ctrlAuth = require('../controllers/user/auth');
+const { grantAccess } = require("../roles")
 
 let secret = "MY_SECRET";
 if (process.env.NODE_ENV === "production") {
@@ -15,7 +16,7 @@ const auth = jwt({
 });
 
 // profile
-Router.get('/profile', auth, ctrlProfile.profileRead);
+Router.get('/profile', auth, grantAccess('readAny', 'profile'), ctrlProfile.profileRead);
 // authentication
 Router.post('/register', ctrlAuth.register);
 Router.post('/login', ctrlAuth.login);
