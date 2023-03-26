@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const passport = require('passport')
 require('./models/db')
+require('./config/passport')
 const app = express();
 
 const routesApi = require("./routes")
@@ -18,6 +19,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors());
+
+app.use(passport.initialize());
 
 app.use("/", routesApi);
 

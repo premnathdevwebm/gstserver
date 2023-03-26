@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 let gracefulShutdown;
 let dbURI = "mongodb://localhost/gstapp";
-// mongodb+srv://premwebdev:9X5wHzW6T3P47i39@cluster0.jwve3md.mongodb.net/gstapp?retryWrites=true&w=majority
+
 if (process.env.NODE_ENV === "production") {
   dbURI = process.env.MONGOLAB_URI;
 }
@@ -9,7 +9,7 @@ mongoose.connect(dbURI);
 
 // CONNECTION EVENTS
 mongoose.connection.on("connected", () => {
-  console.log("Mongoose connected to ");
+  console.log("Mongoose connected");
 });
 mongoose.connection.on("error", (err) => {
   console.log("Mongoose connection error: " + err);
