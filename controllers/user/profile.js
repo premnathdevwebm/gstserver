@@ -11,7 +11,6 @@ module.exports.profileRead = async (req, res) => {
       const user = await User.findById(req.auth._id).lean();
       delete user.salt;
       delete user.hash;
-      console.log(">>>",user);
       return res.status(200).json(user);
     }
   } catch (err) {

@@ -16,7 +16,7 @@ const auth = jwt({
 });
 
 // profile
-Router.get('/profile', auth, grantAccess('readAny', 'profile'), ctrlProfile.profileRead);
+Router.get('/profile', auth, grantAccess('readOwn', 'profile'), ctrlProfile.profileRead);
 // authentication
 Router.post('/register', ctrlAuth.register);
 Router.post('/login', ctrlAuth.login);
