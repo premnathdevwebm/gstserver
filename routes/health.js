@@ -4,7 +4,7 @@ Router.get("/test", (req, res) => {
   return res.json({ message: "Working test" });
 });
 Router.get("/", (req, res) => {
-  return res.json({ message: "Working" });
+  return res.json({ message: `Working ${process.env.NODE_ENV}` });
 });
 
 
