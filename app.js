@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const passport = require('passport')
-
+require('./models/db')
 const app = express();
 
 const routesApi = require("./routes")
