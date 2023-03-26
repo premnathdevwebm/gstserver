@@ -1,8 +1,8 @@
 const Router = require("express").Router();
 const { expressjwt: jwt } = require("express-jwt");
 
-var ctrlProfile = require('../controllers/user/profile');
-var ctrlAuth = require('../controllers/user/auth');
+const ctrlProfile = require('../controllers/user/profile');
+const ctrlAuth = require('../controllers/user/auth');
 
 let secret = "MY_SECRET";
 if (process.env.NODE_ENV === "production") {
@@ -12,7 +12,6 @@ if (process.env.NODE_ENV === "production") {
 const auth = jwt({
   secret,
   algorithms: ["HS256"],
-  userProperty: "payload",
 });
 
 // profile
