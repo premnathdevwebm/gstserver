@@ -7,6 +7,7 @@ const cors = require('cors')
 const passport = require('passport')
 require('./models/db')
 require('./config/passport')
+require('./controllers/commision')
 const app = express();
 
 const routesApi = require("./routes")
@@ -42,5 +43,5 @@ app.use((err, req, res, next) => {
     return res.json({ message: `${err.name} : ${err.message}` });
 });
 
-
+//
 app.listen(port, () => console.log(`app listening on port ${port}!`));
