@@ -3,11 +3,12 @@ const CommissionRate = mongoose.model("CommissionRate");
 
 const getCommisioner = async (req, res) => {
   try {
-     const commisioner = await CommissionRate.find();
-     return res.json(commisioner)
+    const commisioner = await CommissionRate.find();
+    return res.json(commisioner[0]);
   } catch (err) {
     return res.status(404);
   }
 };
+
 
 module.exports = { getCommisioner };

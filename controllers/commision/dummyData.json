@@ -1,0 +1,284 @@
+{
+    "title": {
+      "name": "Commissionrate"
+    },
+    "data": [
+      {
+        "label": "Madurai",
+        "location": "Madurai",
+        "subCommissionRate": {
+          "title": {
+            "name": "SubCommissionRate"
+          },
+          "data": [
+            {
+              "label": "Tirunelveli",
+              "location": "Madurai > Tirunelveli",
+              "division": {
+                "title": {
+                  "name": "Division"
+                },
+                "data": [
+                  {
+                    "label": "Kovilpatti",
+                    "location": "Madurai > Tirunelveli > Kovilpatti",
+                    "range": {
+                      "title": {
+                        "name": "Range"
+                      },
+                      "data": [
+                        {
+                          "label": "Range 1",
+                          "location": "Madurai > Tirunelveli > Kovilpatti > Range 1"
+                        },
+                        {
+                          "label": "Range 2",
+                          "location": "Madurai > Tirunelveli > Kovilpatti > Range w"
+                        },
+                        {
+                          "label": "Range 3",
+                          "location": "Madurai > Tirunelveli > Kovilpatti > Range 3"
+                        },
+                        {
+                          "label": "Range 4",
+                          "location": "Madurai > Tirunelveli > Kovilpatti > Range 4"
+                        },
+                        {
+                          "label": "Range 5",
+                          "location": "Madurai > Tirunelveli > Kovilpatti > Range 5"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Tuticorin",
+                    "location": "Madurai > Tirunelveli > Tuticorin",
+                    "range": {
+                      "title": {
+                        "name": "Range"
+                      },
+                      "data": [
+                        {
+                          "label": "Range 1",
+                          "location": "Madurai > Tirunelveli > Tuticorin > Range 1"
+                        },
+                        {
+                          "label": "Range 2",
+                          "location": "Madurai > Tirunelveli > Tuticorin > Range 2"
+                        },
+                        {
+                          "label": "Range 3",
+                          "location": "Madurai > Tirunelveli > Tuticorin > Range 3"
+                        },
+                        {
+                          "label": "Range 4",
+                          "location": "Madurai > Tirunelveli > Tuticorin > Range 4"
+                        },
+                        {
+                          "label": "Range 5",
+                          "location": "Madurai > Tirunelveli > Tuticorin > Range 5"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Tirunelveli",
+                    "location": "Madurai > Tirunelveli > Tirunelveli",
+                    "range": {
+                      "title": {
+                        "name": "Range"
+                      },
+                      "data": [
+                        {
+                          "label": "Range 1",
+                          "location": "Madurai > Tirunelveli > Tirunelveli > Range 1"
+                        },
+                        {
+                          "label": "Range 2",
+                          "location": "Madurai > Tirunelveli > Tirunelveli > Range 2"
+                        },
+                        {
+                          "label": "Range 3",
+                          "location": "Madurai > Tirunelveli > Tirunelveli > Range 3"
+                        },
+                        {
+                          "label": "Range 4",
+                          "location": "Madurai > Tirunelveli > Tirunelveli > Range 4"
+                        },
+                        {
+                          "label": "Range 5",
+                          "location": "Madurai > Tirunelveli > Tirunelveli > Range 5"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "division": {
+          "title": {
+            "name": "Division"
+          },
+          "data": [
+            {
+              "label": "Dindigul I",
+              "location": "Madurai > Dindigul I",
+              "range": {
+                "title": {
+                  "name": "Range"
+                },
+                "data": [
+                  {
+                    "label": "Range 1",
+                    "location": "Madurai > Dindigul I > Range 1"
+                  },
+                  {
+                    "label": "Range 2",
+                    "location": "Madurai > Dindigul I > Range 2"
+                  },
+                  {
+                    "label": "Range 3",
+                    "location": "Madurai > Dindigul I > Range 3"
+                  },
+                  {
+                    "label": "Range 4",
+                    "location": "Madurai > Dindigul I > Range 4"
+                  },
+                  {
+                    "label": "Range 5",
+                    "location": "Madurai > Dindigul I > Range 5"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Dindigul II",
+              "location": "Madurai > Dindigul II",
+              "range": {
+                "title": {
+                  "name": "Range"
+                },
+                "data": [
+                  {
+                    "label": "Range 1",
+                    "location": "Madurai > Dindigul II > Range 1"
+                  },
+                  {
+                    "label": "Range 2",
+                    "location": "Madurai > Dindigul II > Range 2"
+                  },
+                  {
+                    "label": "Range 3",
+                    "location": "Madurai > Dindigul II > Range 3"
+                  },
+                  {
+                    "label": "Range 4",
+                    "location": "Madurai > Dindigul II > Range 4"
+                  },
+                  {
+                    "label": "Range 5",
+                    "location": "Madurai > Dindigul II > Range 5"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Madurai I",
+              "location": "Madurai > Madurai I",
+              "range": {
+                "title": {
+                  "name": "Range"
+                },
+                "data": [
+                  {
+                    "label": "Range 1",
+                    "location": "Madurai > Madurai I > Range 1"
+                  },
+                  {
+                    "label": "Range 2",
+                    "location": "Madurai > Madurai I > Range 2"
+                  },
+                  {
+                    "label": "Range 3",
+                    "location": "Madurai > Madurai I > Range 3"
+                  },
+                  {
+                    "label": "Range 4",
+                    "location": "Madurai > Madurai I > Range 4"
+                  },
+                  {
+                    "label": "Range 5",
+                    "location": "Madurai > Madurai I > Range 5"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Madurai II",
+              "location": "Madurai > Madurai II",
+              "range": {
+                "title": {
+                  "name": "Range"
+                },
+                "data": [
+                  {
+                    "label": "Range 1",
+                    "location": "Madurai > Madurai II > Range 1"
+                  },
+                  {
+                    "label": "Range 2",
+                    "location": "Madurai > Madurai II > Range 2"
+                  },
+                  {
+                    "label": "Range 3",
+                    "location": "Madurai > Madurai II > Range 3"
+                  },
+                  {
+                    "label": "Range 4",
+                    "location": "Madurai > Madurai II > Range 4"
+                  },
+                  {
+                    "label": "Range 5",
+                    "location": "Madurai > Madurai II > Range 5"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Rajapalayam",
+              "location": "Madurai > Rajapalayam",
+              "range": {
+                "title": {
+                  "name": "Range"
+                },
+                "data": [
+                  {
+                    "label": "Range 1",
+                    "location": "Madurai > Rajapalayam > Range 1"
+                  },
+                  {
+                    "label": "Range 2",
+                    "location": "Madurai > Rajapalayam > Range 2"
+                  },
+                  {
+                    "label": "Range 3",
+                    "location": "Madurai > Rajapalayam > Range 3"
+                  },
+                  {
+                    "label": "Range 4",
+                    "location": "Madurai > Rajapalayam > Range 4"
+                  },
+                  {
+                    "label": "Range 5",
+                    "location": "Madurai > Rajapalayam > Range 5"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
