@@ -5,7 +5,7 @@ const postGst = async (req, res) => {
   try {
     if (!req.auth._id) {
       return res.status(401).json({
-        message: "UnauthorizedError: private profile",
+        message: "UnauthorizedError: private gst",
       });
     }
     const gst = await Gst.create({ ...req.body, user: req.auth.name });
@@ -14,12 +14,11 @@ const postGst = async (req, res) => {
     return res.status(404);
   }
 };
-
 const getGsts = async (req, res) => {
   try {
     if (!req.auth._id) {
       return res.status(401).json({
-        message: "UnauthorizedError: private profile",
+        message: "UnauthorizedError: private gsts",
       });
     }
     const gsts = await Gst.find();
@@ -32,11 +31,11 @@ const getGst = async (req, res) => {
   try {
     if (!req.auth._id) {
       return res.status(401).json({
-        message: "UnauthorizedError: private profile",
+        message: "UnauthorizedError: private gst",
       });
     }
-    const gsts = await Gst.findOne({ _id: req.params.id });
-    res.json(gsts);
+    const gst = await Gst.findOne({ _id: req.params.id });
+    res.json(gst);
   } catch (err) {
     return res.status(404);
   }

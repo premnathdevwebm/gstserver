@@ -1,0 +1,346 @@
+{
+  "title": { "name": "Commissionrate" },
+  "data": [
+    {
+      "label": "Madurai",
+      "location": "Madurai",
+      "subCommissionRate": [
+        { "title": { "name": "SubCommissionRate" }, "data": [] }
+      ],
+      "division": [
+        {
+          "title": { "name": "Division" },
+          "data": [
+            {
+              "label": "Madurai I",
+              "location": "Madurai > Madurai I",
+              "range": [
+                {
+                  "title": { "name": "Range" },
+                  "data": [
+                    {
+                      "label": "Madurai City",
+                      "location": "Madurai > Madurai I > Madurai City"
+                    },
+                    {
+                      "label": "Madurai South",
+                      "location": "Madurai > Madurai I > Madurai South"
+                    },
+                    {
+                      "label": "Madurai West",
+                      "location": "Madurai > Madurai I > Madurai West"
+                    },
+                    {
+                      "label": "Thiruparankundram",
+                      "location": "Madurai > Madurai I > Thiruparankundram"
+                    },
+                    {
+                      "label": "Thirumangalam",
+                      "location": "Madurai > Madurai I > Thirumangalam"
+                    },
+                    {
+                      "label": "Kariapatti",
+                      "location": "Madurai > Madurai I > Kariapatti"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Madurai II",
+              "location": "Madurai > Madurai II",
+              "range": [
+                {
+                  "title": { "name": "Range" },
+                  "data": [
+                    {
+                      "label": "Madurai North East",
+                      "location": "Madurai > Madurai II > Madurai North East"
+                    },
+                    {
+                      "label": "Melur",
+                      "location": "Madurai > Madurai II > Melur"
+                    },
+                    {
+                      "label": "Sivagangai",
+                      "location": "Madurai > Madurai II > Sivagangai"
+                    },
+                    {
+                      "label": "Karaikudi",
+                      "location": "Madurai > Madurai II > Karaikudi"
+                    },
+                    {
+                      "label": "Ramnad",
+                      "location": "Madurai > Madurai II > Ramnad"
+                    },
+                    {
+                      "label": "Vilangudi",
+                      "location": "Madurai > Madurai II > Vilangudi"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Dindigul I",
+              "location": "Madurai > Dindigul I",
+              "range": [
+                {
+                  "title": { "name": "Range" },
+                  "data": [
+                    {
+                      "label": "Dindigul - I",
+                      "location": "Madurai > Dindigul I > Dindigul - I"
+                    },
+                    {
+                      "label": "Dindigul - II",
+                      "location": "Madurai > Dindigul I > Dindigul - II"
+                    },
+                    {
+                      "label": "Vadamadurai",
+                      "location": "Madurai > Dindigul I > Vadamadurai"
+                    },
+                    {
+                      "label": "Vedasandur - I",
+                      "location": "Madurai > Dindigul I > Vedasandur - I"
+                    },
+                    {
+                      "label": "Vedasandur - II",
+                      "location": "Madurai > Dindigul I > Vedasandur - II"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Dindigul II",
+              "location": "Madurai > Dindigul II",
+              "range": [
+                {
+                  "title": { "name": "Range" },
+                  "data": [
+                    {
+                      "label": "BATLAGUNDU",
+                      "location": "Madurai > Dindigul II > BATLAGUNDU"
+                    },
+                    {
+                      "label": "PALANI - I",
+                      "location": "Madurai > Dindigul II > PALANI - I"
+                    },
+                    {
+                      "label": "PALANI - II",
+                      "location": "Madurai > Dindigul II > PALANI - II"
+                    },
+                    {
+                      "label": "THENI",
+                      "location": "Madurai > Dindigul II > THENI"
+                    },
+                    {
+                      "label": "VADIPATTI",
+                      "location": "Madurai > Dindigul II > VADIPATTI"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Virudhunagar",
+              "location": "Madurai > Virudhunagar",
+              "range": [
+                {
+                  "title": { "name": "Range" },
+                  "data": [
+                    {
+                      "label": "Virudhunagar - I",
+                      "location": "Madurai > Virudhunagar > Virudhunagar - I"
+                    },
+                    {
+                      "label": "Virudhunagar - II",
+                      "location": "Madurai > Virudhunagar > Virudhunagar - II"
+                    },
+                    {
+                      "label": "Aruppukottai",
+                      "location": "Madurai > Virudhunagar > Aruppukottai"
+                    },
+                    {
+                      "label": "Sattur I",
+                      "location": "Madurai > Virudhunagar > Sattur I"
+                    },
+                    {
+                      "label": "Sattur II",
+                      "location": "Madurai > Virudhunagar > Sattur II"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Sivakasi",
+              "location": "Madurai > Sivakasi",
+              "range": [
+                {
+                  "title": { "name": "Range" },
+                  "data": [
+                    {
+                      "label": "Sivakasi - I",
+                      "location": "Madurai > Sivakasi > Sivakasi - I"
+                    },
+                    {
+                      "label": "Sivakasi - II",
+                      "location": "Madurai > Sivakasi > Sivakasi - II"
+                    },
+                    {
+                      "label": "Thiruthangal",
+                      "location": "Madurai > Sivakasi > Thiruthangal"
+                    },
+                    {
+                      "label": "Vilampatti",
+                      "location": "Madurai > Sivakasi > Vilampatti"
+                    },
+                    {
+                      "label": "Vetrilaiyurani",
+                      "location": "Madurai > Sivakasi > Vetrilaiyurani"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Vetrilaiyurani",
+              "location": "Madurai > Vetrilaiyurani",
+              "range": [
+                {
+                  "title": { "name": "Range" },
+                  "data": [
+                    {
+                      "label": "Rajapalayam - I",
+                      "location": "Madurai > Rajapalayam > Rajapalayam - I"
+                    },
+                    {
+                      "label": "Rajapalayam - II",
+                      "location": "Madurai > Rajapalayam > Rajapalayam - II"
+                    },
+                    {
+                      "label": "Srivilliputhur",
+                      "location": "Madurai > Rajapalayam > Srivilliputhur"
+                    },
+                    {
+                      "label": "Elayirampannai",
+                      "location": "Madurai > Rajapalayam > Elayirampannai"
+                    },
+                    {
+                      "label": "Thayilpatti",
+                      "location": "Madurai > Rajapalayam > Thayilpatti"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Tirunelveli",
+              "location": "Madurai > Tirunelveli",
+              "range": [
+                {
+                  "title": { "name": "Range" },
+                  "data": [
+                    {
+                      "label": "Tirunelveli",
+                      "location": "Madurai > Tirunelveli > Tirunelveli"
+                    },
+                    {
+                      "label": "Palayamkottai",
+                      "location": "Madurai > Tirunelveli > Palayamkottai"
+                    },
+                    {
+                      "label": "Sankar nagar",
+                      "location": "Madurai > Tirunelveli > Sankar nagar"
+                    },
+                    {
+                      "label": "Ambai I",
+                      "location": "Madurai > Tirunelveli > Ambai I"
+                    },
+                    {
+                      "label": "Ambai II",
+                      "location": "Madurai > Tirunelveli > Ambai II"
+                    },
+                    {
+                      "label": "Tenkasi",
+                      "location": "Madurai > Tirunelveli > Tenkasi"
+                    },
+                    {
+                      "label": "Nagercoil",
+                      "location": "Madurai > Tirunelveli > Nagercoil"
+                    },
+                    {
+                      "label": "Marthandam",
+                      "location": "Madurai > Tirunelveli > Marthandam"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Tuticorin",
+              "location": "Madurai > Tuticorin",
+              "range": [
+                {
+                  "title": { "name": "Range" },
+                  "data": [
+                    {
+                      "label": "Tuticorin North",
+                      "location": "Madurai > Tuticorin > Tuticorin North"
+                    },
+                    {
+                      "label": "Tuticorin South",
+                      "location": "Madurai > Tuticorin > Tuticorin South"
+                    },
+                    {
+                      "label": "Tuticorin West",
+                      "location": "Madurai > Tuticorin > Tuticorin West"
+                    },
+                    {
+                      "label": "Sathankulam",
+                      "location": "Madurai > Tuticorin > Sathankulam"
+                    },
+                    {
+                      "label": "Tiruchendur",
+                      "location": "Madurai > Tuticorin > Tiruchendur"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Kovilpatti",
+              "location": "Madurai > Kovilpatti",
+              "range": [
+                {
+                  "title": { "name": "Range" },
+                  "data": [
+                    {
+                      "label": "Ettayapuram",
+                      "location": "Madurai > Kovilpatti > Ettayapuram"
+                    },
+                    {
+                      "label": "Vilathikulam",
+                      "location": "Madurai > Kovilpatti > Vilathikulam"
+                    },
+                    {
+                      "label": "Kalugumalai",
+                      "location": "Madurai > Kovilpatti > Kalugumalai"
+                    },
+                    {
+                      "label": "Sankarankoil",
+                      "location": "Madurai > Kovilpatti > Sankarankoil"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "range": []
+    }
+  ]
+}
