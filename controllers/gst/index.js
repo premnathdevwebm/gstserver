@@ -3,7 +3,7 @@ const Gst = mongoose.model("Gst");
 
 const postGst = async (req, res) => {
   try {
-    if(!req.auth._id){
+    if (!req.auth._id) {
       return res.status(401).json({
         message: "UnauthorizedError: private profile",
       });
@@ -15,4 +15,31 @@ const postGst = async (req, res) => {
   }
 };
 
-module.exports = { postGst };
+const getGsts = async (req, res) => {
+  try {
+    if (!req.auth._id) {
+      return res.status(401).json({
+        message: "UnauthorizedError: private profile",
+      });
+    }
+    const gsts = await Gst.find();
+    res.json(gsts);
+  } catch (err) {
+    return res.status(404);
+  }
+};
+const getGst = async (req, res) => {
+  try {
+    if (!req.auth._id) {
+      return res.status(401).json({
+        message: "UnauthorizedError: private profile",
+      });
+    }
+    const gsts = await Gst.findOne({ _id: req.params.id });
+    res.json(gsts);
+  } catch (err) {
+    return res.status(404);
+  }
+};
+
+module.exports = { postGst, getGsts, getGst };
