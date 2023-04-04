@@ -16,5 +16,6 @@ const auth = jwt({
 Router.post('/', auth, gstCtrl.postGst);
 Router.get('/', auth, gstCtrl.getGsts);
 Router.get('/:id', auth, gstCtrl.getGst);
+Router.patch('/:id', auth, gstCtrl.updateGst);
 
 module.exports = Router;

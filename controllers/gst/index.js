@@ -40,5 +40,22 @@ const getGst = async (req, res) => {
     return res.status(404);
   }
 };
+const updateGst = async (req, res) => {
+  try {
+    if (!req.auth._id) {
+      return res.status(401).json({
+        message: "UnauthorizedError: private gst",
+      });
+    }
+    const gst = await Gst.findOneAndUpdate(
+      { _id: req.params.id },
+      { $set: { gst: { ...req.body } } },
+      { new: true }
+    );
+    res.json(gst);
+  } catch (err) {
+    return res.status(404);
+  }
+};
 
-module.exports = { postGst, getGsts, getGst };
+module.exports = { postGst, getGsts, getGst, updateGst };
