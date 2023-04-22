@@ -8,7 +8,16 @@ const postGst = async (req, res) => {
         message: "UnauthorizedError: private gst",
       });
     }
-    const gst = await Gst.create({ ...req.body, user: req.auth.name });
+    const gst = await Gst.create({
+      ...req.body,
+      user: req.auth.name,
+      scn: { $push: req.body.scn },
+      oio: { $push: req.body.oio },
+      appealorder: { $push: req.body.appealorder },
+      predeposit: { $push: req.body.predeposit },
+      recovery: { $push: req.body.recovery },
+      appeal: { $push: req.body.appeal },
+    });
     res.json(gst);
   } catch (err) {
     return res.status(404);
@@ -41,15 +50,26 @@ const getGst = async (req, res) => {
   }
 };
 const updateGst = async (req, res) => {
+ 
   try {
     if (!req.auth._id) {
       return res.status(401).json({
         message: "UnauthorizedError: private gst",
       });
     }
+    const updateQuery = {}
+    updateQuery[`scn.${req.params.index}`] = { ...req.body.scn }
+    updateQuery[`oio.${req.params.index}`] = { ...req.body.oio }
+    updateQuery[`appealorder.${req.params.index}`] = { ...req.body.appealorder }
+    updateQuery[`predeposit.${req.params.index}`] = { ...req.body.predeposit }
+    updateQuery[`recovery.${req.params.index}`] = { ...req.body.recovery }
+    updateQuery[`appeal.${req.params.index}`] = { ...req.body.appeal }
+    console.log(">>", updateQuery);
     const gst = await Gst.findOneAndUpdate(
       { _id: req.params.id },
-      { $set: { gst: { ...req.body } } },
+      {
+        $set: updateQuery,
+      },
       { new: true }
     );
     res.json(gst);
