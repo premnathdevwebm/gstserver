@@ -64,7 +64,6 @@ const updateGst = async (req, res) => {
     updateQuery[`predeposit.${req.params.index}`] = { ...req.body.predeposit }
     updateQuery[`recovery.${req.params.index}`] = { ...req.body.recovery }
     updateQuery[`appeal.${req.params.index}`] = { ...req.body.appeal }
-    console.log(">>", updateQuery);
     const gst = await Gst.findOneAndUpdate(
       { _id: req.params.id },
       {
