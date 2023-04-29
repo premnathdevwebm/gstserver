@@ -31,20 +31,6 @@ const getGsts = async (req, res) => {
       });
     }
     const gsts = await Gst.find();
-    [...gsts].forEach((doc) => {
-      const temp = Object.entries(doc);
-      const tempMap = temp[2][1];
-      const {
-        appealorder,
-        oio,
-        predeposit,
-        recovery,
-        appeal,
-        scn,
-        ...restVal
-      } = tempMap;
-      console.log(appealorder, oio, predeposit, recovery, appeal, scn, restVal);
-    });
     res.json(gsts);
   } catch (err) {
     return res.status(404);
