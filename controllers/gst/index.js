@@ -13,6 +13,7 @@ const postGst = async (req, res) => {
       user: req.auth.name,
       scn: req.body.scn,
       oio: req.body.oio,
+      status: req.body?.status ?? "",
       appealorder: req.body.appealorder,
       predeposit: req.body.predeposit,
       recovery: req.body.recovery,
@@ -57,6 +58,7 @@ const updateGst = async (req, res) => {
       });
     }
     const updateQuery = {};
+    updateQuery[`status`] = req.body?.status;
     updateQuery[`scn.${req.params.index}`] = { ...req.body.scn };
     updateQuery[`oio.${req.params.index}`] = { ...req.body.oio };
     updateQuery[`appealorder.${req.params.index}`] = {

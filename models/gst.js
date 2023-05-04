@@ -9,6 +9,7 @@ const gstSchema = new mongoose.Schema({
     recovery: [mongoose.Schema.Types.Mixed],
     appeal: [mongoose.Schema.Types.Mixed],
     scn: [mongoose.Schema.Types.Mixed],
+    status: String,
 }, {timestamps: true});
 
 mongoose.model('Gst', gstSchema);
