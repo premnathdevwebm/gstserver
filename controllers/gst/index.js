@@ -31,7 +31,22 @@ const getGsts = async (req, res) => {
         message: "UnauthorizedError: private gsts",
       });
     }
-    const gsts = await Gst.find();
+    const filter = { status: { $nin: ["14", "13"] } };
+    const gsts = await Gst.find(filter);
+    res.json(gsts);
+  } catch (err) {
+    return res.status(404);
+  }
+};
+const getHistory = async (req, res) => {
+  try {
+    if (!req.auth._id) {
+      return res.status(401).json({
+        message: "UnauthorizedError: private gsts",
+      });
+    }
+    const filter = { status: { $in: ["13", "14"] } }
+    const gsts = await Gst.find(filter);
     res.json(gsts);
   } catch (err) {
     return res.status(404);
@@ -80,4 +95,4 @@ const updateGst = async (req, res) => {
   }
 };
 
-module.exports = { postGst, getGsts, getGst, updateGst };
+module.exports = { postGst, getGsts, getHistory, getGst, updateGst };

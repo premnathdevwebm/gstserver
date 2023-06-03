@@ -15,6 +15,7 @@ const auth = jwt({
 
 Router.post('/', auth, gstCtrl.postGst);
 Router.get('/', auth, gstCtrl.getGsts);
+Router.get('/history', auth, gstCtrl.getHistory);
 Router.get('/:id', auth, gstCtrl.getGst);
 Router.patch('/:id/:index', auth, gstCtrl.updateGst);
 
