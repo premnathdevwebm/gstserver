@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 let gracefulShutdown;
-let dbURI = "mongodb://localhost/gstapp";
+let dbURI = "mongodb+srv://premwebdev:Premnath_321@cluster0.jwve3md.mongodb.net/gstapp";
 
 if (process.env.NODE_ENV === "production") {
   dbURI = process.env.MONGOLAB_URI;
