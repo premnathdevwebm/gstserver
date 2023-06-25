@@ -7,7 +7,7 @@ const { grantAccess } = require("../roles")
 
 let secret = "MY_SECRET";
 if (process.env.NODE_ENV === "production") {
-  secret = process.env.SECRET;
+  secret = process.env.SECRET ?? "MY_SECRET";
 }
 
 const auth = jwt({

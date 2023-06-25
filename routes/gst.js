@@ -5,7 +5,7 @@ const gstCtrl = require("../controllers/gst")
 
 let secret = "MY_SECRET";
 if (process.env.NODE_ENV === "production") {
-  secret = process.env.SECRET;
+  secret = process.env.SECRET ?? "MY_SECRET";
 }
 
 const auth = jwt({
