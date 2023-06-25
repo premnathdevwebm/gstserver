@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Gst = mongoose.model("Gst");
-const ExcelJs = require("xlsx");
+const XlsxPopulate = require("xlsx-populate");
 const cloudinary = require("../../config/cloudinaryUpload");
 
 const postGst = async (req, res) => {
@@ -80,38 +80,58 @@ const excelgst = async (req, res) => {
       { name: "Jane Smith", age: 25 },
     ];
 
-    const worksheet = ExcelJs.utils.json_to_sheet(data);
+    ///
 
-    const rowNumber = 2;
-    const rowHeight = 40;
+    XlsxPopulate.fromBlankAsync()
+      .then((workbook) => {
+        const worksheet = workbook.sheet(0);
 
-    worksheet["!rows"] = worksheet["!rows"] || [];
-    worksheet["!rows"][rowNumber] = worksheet["!rows"][rowNumber] || {};
-    worksheet["!rows"][rowNumber].hpx = rowHeight;
+        // Set column headers
+        worksheet.cell("A1").value("");
+        worksheet.cell("B1").value("Name");
+        worksheet.cell("C1").value("Age");
 
-    const workbook = ExcelJs.utils.book_new();
-    ExcelJs.utils.book_append_sheet(workbook, worksheet, "Sheet1");
-    const excelBuffer = ExcelJs.write(workbook, {
-      type: "buffer",
-      bookType: "xlsx",
-    });
+       /* 
+       
+        // Merge cells for the empty header
+        worksheet.range("A1:C1").merged(true);
 
-    cloudinary.uploader.upload(
-      excelBuffer,
-      {
-        resource_type: "raw",
-        format: "xlsx",
-        filename_override: "download.xlsx",
-      },
-      (error, result) => {
-        if (error) {
-          throw new Error("Error in uploading file");
-        } else {
-          console.log("File Uploaded");
-          res.json({ data: result.secure_url });
-        }
-      }
-    );
+        // Set alignment for the empty header
+        worksheet.cell("A1").style({
+          horizontalAlignment: "center",
+        });
+
+         */
+
+        data.forEach((item, index) => {
+          worksheet.cell(`B${index + 2}`).value(item.name);
+          worksheet.cell(`C${index + 2}`).value(item.age);
+        });
+
+        return workbook.outputAsync();
+      })
+      .then((excelBuffer) => {
+        cloudinary.uploader
+          .upload_stream(
+            {
+              resource_type: "raw",
+              use_filename: true,
+              unique_filename: false,
+              format: "xlsx",
+            },
+            (error, result) => {
+              if (error) {
+                throw new Error(error);
+              } else {
+                return res.json({ data: `${result.secure_url}` });
+              }
+            }
+          )
+          .end(excelBuffer);
+      })
+      .catch((error) => {
+        throw new Error(error);
+      });
   } catch (err) {
     return res.status(404).json({ data: err.message });
   }
